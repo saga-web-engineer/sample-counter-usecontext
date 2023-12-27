@@ -1,0 +1,17 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.inner {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.button {
+  width: 60px;
+}
