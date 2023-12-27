@@ -1,5 +1,5 @@
 {
-  "name": "sample-usecontext",
+  "name": "sample-counter-usecontext",
   "private": true,
   "type": "module",
   "scripts": {
