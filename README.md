@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# useContextを使用したカウンターアプリ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+useContextを使用したカウンターアプリのサンプルです。
+Viteを用いて作成しています。
+こちらの[ブログ記事](https://www.saga-web-engineer-blog.com/posts/counter-usecontext)のサンプルコードとして置いています。
 
-Currently, two official plugins are available:
+## 動作環境
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+このリポジトリはVoltaを使用してNode.jsのバージョンを管理しているため別ツールを使用している方はNode.jsとNpmのバージョンを下記に設定してください。
 
-## Expanding the ESLint configuration
+- Node.js 20.10.0
+- Npm 10.2.3
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## コードを実行するには
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+クローンした後に.env.sampleを.envにリネームしMAILER_USERとMAILER_PASSをご自身のものに設定してください。
+モジュールのインストールをして起動させます。
+```bash
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```bash
+npm run dev
+```
