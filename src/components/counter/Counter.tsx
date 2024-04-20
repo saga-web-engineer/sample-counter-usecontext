@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from 'react';
 
 import { CounterButton } from './CounterButton';
 import { CounterCount } from './CounterCount';
