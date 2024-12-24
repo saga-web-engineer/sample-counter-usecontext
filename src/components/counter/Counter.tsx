@@ -7,10 +7,8 @@ export const Counter: FC = () => {
   return (
     <>
       <CounterCount />
-      <div className="inner">
-        <CounterButton step={1} type="+" />
-        <CounterButton step={1} type="-" />
-      </div>
+      <CounterButton step={1} type="+" />
+      <CounterButton step={1} type="-" />
     </>
   );
 };

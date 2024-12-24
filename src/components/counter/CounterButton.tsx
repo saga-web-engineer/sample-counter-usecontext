@@ -12,7 +12,7 @@ export const CounterButton: FC<Props> = ({ type, step }) => {
   const clickHandler = () => dispatch({ type, step });
 
   return (
-    <button onClick={clickHandler} className="button">
+    <button onClick={clickHandler}>
       {type}
       {step}
     </button>

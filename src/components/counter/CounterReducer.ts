@@ -15,6 +15,7 @@ const reducer = (prev: number, { type, step }: Action) => {
       throw new Error('Error');
   }
 };
+
 const initialState = 0;
 
 export const useCounterReducer = () => {
